@@ -1,0 +1,83 @@
+body {
+    background: linear-gradient(135deg, #f8f9fd, #e6f0ff); /* Soft gradient background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+    text-align: center;
+}
+
+h1 {
+    color: #6a0dad; /* Deep purple */
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+.assignments {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+
+button {
+    background: linear-gradient(135deg, #8a2be2, #6a0dad); /* Elegant purple gradient */
+    color: white;
+    border: 2px solid #ffffff; /* Subtle border */
+    padding: 12px 22px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+    outline: none;
+    position: relative;
+    overflow: hidden;
+}
+
+button::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background: rgba(255, 255, 255, 0.3);
+    transition: all 0.5s ease;
+    border-radius: 50%;
+    transform: translate(-50%, -50%) scale(0);
+}
+
+button:hover::before {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+button:hover {
+    background: linear-gradient(135deg, #6a0dad, #8a2be2); /* Reverse gradient */
+    transform: scale(1.08);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.3);
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+
+
+

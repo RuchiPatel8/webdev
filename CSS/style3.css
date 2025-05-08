@@ -1,0 +1,58 @@
+body {
+    background: linear-gradient(135deg, #4B0082, #6A0DAD); /* Dark purple gradient */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    background-color: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 400px; /* Square shape */
+}
+
+h1 {
+    color: #4B0082; /* Purple text */
+    margin-bottom: 30px; /* More spacing */
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px; /* Increased spacing */
+}
+
+button {
+    width: 200px; /* Fixed width for uniform size */
+    height: 50px; /* Fixed height for consistency */
+    background: linear-gradient(135deg, #9370DB, #8A2BE2); /* Gradient purple */
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Centers text within buttons */
+    text-align: center;
+}
+
+button:hover {
+    background: linear-gradient(135deg, #8A2BE2, #9370DB);
+    transform: scale(1.05);
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
